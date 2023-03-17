@@ -75,7 +75,7 @@ body{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     padding-bottom: 2.7rem;
     transition: all 0.2s ease-in-out;
-   display: none;
+   
 }
 
 .cart-heading{
@@ -93,7 +93,10 @@ body{
     text-align: center;
     padding: 8.2rem 0;
 }
-
+.cart-content--visible{
+    transform: translateX(-50%) scaleY(1);
+    -webkit-transform: translateX(-50%) scaleY(1);
+}
 /* principal */
 
 main{
@@ -245,15 +248,13 @@ main{
     
     transform: translate(-50%,-50%);
 }
-/* esconde o contado do input number */
+/* esconde o contador do input number */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-/* input[type="number"] {
-    -moz-appearance: textfield;
-} */
+
 .button-plus{
     cursor: pointer;
     position: absolute;
