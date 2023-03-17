@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="header container">
-    <div class="group__header">
+    <div class="group-header">
       <div class="logo">
         <a href="#">
           <img src="assets/images/logo.svg" alt="logo">
@@ -25,24 +25,22 @@
         </ul>
       </nav>
     </div>
-    <div class="group__header">
-      <div class="header__cart-icon">
-        <img src="assets/images/icon-cart.svg" alt="">
+    <div class="group-header" >
+      <div class="header__cart-icon" id="show-or-hide" >
+        <img src="assets/images/icon-cart.svg" alt="" >
         <span></span>
       </div>
       <figure class="header__user-avatar">
         <img src="assets/images/image-avatar.png" alt="image-avatar">
       </figure>
-       <!-- Start Cart Content -->
-      <div class="header-cart">
-         <!-- Empty Cart Content -->
-        <h3 class="cart-heading">Cart</h3>
-        <div class="cart-empty">
-          Your cart is empty.
+    </div>
+     <!-- Start Cart Content -->
+    <div class="header-cart" id="header-card">
+      <!-- Empty Cart Content -->
+      <h3 class="cart-heading">Cart</h3>
+      <div class="cart-empty">
+       Your cart is empty.
       </div>
-
-      </div>
-
     </div>
 
   </header>
@@ -83,11 +81,11 @@
       </div>
       <div class="product-button">
         <div class="product-quantity">
-          <img src="assets/images/icon-minus.svg" alt="" class="button-minus">
+          <img src="assets/images/icon-minus.svg" alt="" class="button-minus" id="btn-minus">
           
-          <input type="number" value="0" class="quantity-number">
+          <input type="number" value="0" class="quantity-number" id="quantity-input">
           
-          <img src="assets/images/icon-plus.svg" alt=""  class="button-plus">
+          <img src="assets/images/icon-plus.svg" alt=""  class="button-plus" id="btn-plus">
           
         </div>
        
@@ -99,6 +97,7 @@
     </article>
   
   </main>
+  <script src="assets/js/script.js"></script>
   
   <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
