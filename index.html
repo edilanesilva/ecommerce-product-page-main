@@ -35,13 +35,22 @@
       </figure>
     </div>
      <!-- Start Cart Content -->
-    <div class="header-cart" id="header-card">
+    <div class="header-cart esconder" id="header-card" padding="1em">
       <!-- Empty Cart Content -->
-      <h3 class="cart-heading">Cart</h3>
-      <div class="cart-empty">
-       Your cart is empty.
+      <div class="cart">
+        <h3 class="cart-heading" >Cart</h3>
+        <div class="cart-product" >
+          <img id="image" />
+          <div class="cart-content">
+            <h3 id="name-produto"></h3>
+            <p id="preco"> Your cart is empty</p>
+            <div id="qtd"></div>
+            <div id="preco-final"></div>
+          </div>
+          <img class="btn-delete" id="btn-delete">
+        </div>
       </div>
-    </div>
+    </div>  
 
   </header>
 
@@ -90,7 +99,7 @@
         </div>
        
         <button class="button-addcart" id="add-item"> 
-          <img src="assets/images/icon-cart.svg" alt="icon-cart"> Add to cart
+          <img src="assets/images/icon-cart-white.svg" alt="icon-cart" class="cart-white"> Add to cart
         </button>
       </div>
       </section>

@@ -17,7 +17,7 @@ body{
 }
 .container{
   margin: auto;
- width: 1200px;
+  width: 1200px;
 
 }
 .header{
@@ -64,7 +64,7 @@ body{
 /* cart */
 
 .header-cart{
-    width: 18rem;
+    width: 26rem;
     height: 18rem;
     position: absolute;
     right: 0;
@@ -75,7 +75,14 @@ body{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     padding-bottom: 2.7rem;
     transition: all 0.2s ease-in-out;
-   
+}
+/* mostrar e esconder carrinho de compras */
+.mostrar{
+    display: block;
+}
+
+.esconder{
+    display: none;
 }
 
 .cart-heading{
@@ -86,17 +93,30 @@ body{
     font-weight: 700;
 }
 
-.cart-empty{
-    font-size: 1rem;
-    font-weight: 700;
+.cart-product{
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.cart-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    margin-right: 1.6rem;
+}
+.cart-content h3{
     color: var(--dark-grayish-blue);
-    text-align: center;
-    padding: 8.2rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
 }
-.cart-content--visible{
-    transform: translateX(-50%) scaleY(1);
-    -webkit-transform: translateX(-50%) scaleY(1);
+
+.btn-delete:hover{
+    cursor: pointer;
 }
+
+
 /* principal */
 
 main{
@@ -107,8 +127,6 @@ main{
 .container-product{
     display: flex;
     align-items: center;
-    
-    
 }
 
 .product-gallery{
@@ -117,8 +135,6 @@ main{
     flex-direction: column;
     padding: 0 4.9rem;
     flex-basis: 50%;
-   
-
 }
 
 .product-photo{
@@ -175,7 +191,6 @@ main{
 }
 
 .description-product{
-   
     color: var(--dark-grayish-blue);
     line-height: 1.4;
     margin-bottom: 2.4rem;
@@ -249,8 +264,8 @@ main{
     transform: translate(-50%,-50%);
 }
 /* esconde o contador do input number */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -284,6 +299,10 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #fff;
     transform: scale(0.7);
     
+}
+
+.cart-white{
+    fill: white;
 }
 
 .footer{

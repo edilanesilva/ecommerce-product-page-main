@@ -3,35 +3,68 @@ const btnMinus = document.querySelector('#btn-minus');
 const btnPlus = document.querySelector('#btn-plus');
 const btnAdd = document.querySelector('#add-item');
 const quantityProduct = document.querySelector('#quantity-input');
+const cartContent = document.querySelector('#header-card');
+const productName = document.querySelector('#name-produto');
+const productPrice = document.querySelector('#preco');
+const productImage = document.querySelector('#image');
+const productQtd = document.querySelector('#qtd');
+const productTotalPrice = document.querySelector('#preco-final');
+const btnDelete = document.querySelector('#btn-delete');
 
-btnMinus.addEventListener('click', removeItem);
-btnPlus.addEventListener('click', adicionaItem);
 
-btnAdd.addEventListener("click", addCarrinho);
+btnMinus.addEventListener('click', removeQtd);
+btnPlus.addEventListener('click', addQtd);
+btnAdd.addEventListener("click", addCart);
+btnDelete.addEventListener('click', removeCart)
+btnCart.addEventListener('click', () => {
+    cartContent.classList.toggle('esconder');
+    cartContent.classList.toggle('mostrar');
+});
 
-function addCarrinho() {
-    localStorage.clear();
+let carrinho=[];
+function addCart() {
+   
     if (quantityProduct.value > 0) {
         const produto = {
-            nome: "Fall Limited Edition Sneakers",
-            preco: 125.00,
-            img: "../assets/images/image-product-1-thumbnail.jpg",
+            name: "Fall Limited Edition Sneakers",
+            price: 125.00,
+            img: "assets/images/image-product-1-thumbnail.jpg",
             qtd: quantityProduct.value,
-            precoTotal: 125.00 * quantityProduct.value
+            totalPrice: 125 * quantityProduct.value,
+            delete : "assets/images/icon-delete.svg" 
         }
 
-        localStorage.setItem("produto", JSON.stringify(produto));
-    }
-    const produto1 = JSON.parse(localStorage.getItem("produto"));
-    console.log(produto1.nome);
+        carrinho.push(produto)
+        console.log(carrinho)
+        if (!productImage.classList.contains("cart-img")) {
+            productImage.classList.add('cart-img');
+        }
 
+        productName.innerHTML = carrinho[0].name;
+        productPrice.innerHTML = carrinho[0].price;
+        productImage.setAttribute('src', carrinho[0].img);
+        productQtd.innerHTML = carrinho[0].qtd;
+        productTotalPrice.innerHTML = carrinho[0].totalPrice;
+        btnDelete.setAttribute('src', carrinho[0].delete)
+    }
 }
 
-function adicionaItem() {
+function removeCart() {
+    carrinho.splice(0, 1);
+    productImage.classList.remove("cart-img");
+    productName.innerHTML = '';
+    productPrice.innerHTML = '';
+    productImage.setAttribute('src', "");
+    productQtd.innerHTML = '';
+    productTotalPrice.innerHTML = '';
+    btnDelete.setAttribute('src', "")
+}
+
+function addQtd() {
     quantityProduct.value = parseInt(quantityProduct.value) + 1;
 }
 
-function removeItem() {
+function removeQtd() {
     if (quantityProduct.value > 0) {
         quantityProduct.value = parseInt(quantityProduct.value) - 1;
     }
