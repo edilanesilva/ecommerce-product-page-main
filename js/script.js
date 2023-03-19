@@ -10,6 +10,8 @@ const productImage = document.querySelector('#image');
 const productQtd = document.querySelector('#qtd');
 const productTotalPrice = document.querySelector('#preco-final');
 const btnDelete = document.querySelector('#btn-delete');
+const emptyCart = document.querySelector('#empty-cart');
+const btnCheckout = document.querySelector("#btn-checkout");
 
 
 btnMinus.addEventListener('click', removeQtd);
@@ -21,36 +23,41 @@ btnCart.addEventListener('click', () => {
     cartContent.classList.toggle('mostrar');
 });
 
-let carrinho=[];
+let shoppingCart = [];
 function addCart() {
    
     if (quantityProduct.value > 0) {
-        const produto = {
+        const product = {
             name: "Fall Limited Edition Sneakers",
-            price: 125.00,
+            price: 125,
             img: "assets/images/image-product-1-thumbnail.jpg",
             qtd: quantityProduct.value,
             totalPrice: 125 * quantityProduct.value,
             delete : "assets/images/icon-delete.svg" 
         }
 
-        carrinho.push(produto)
-        console.log(carrinho)
+        shoppingCart.push(product)
+        console.log(shoppingCart)
         if (!productImage.classList.contains("cart-img")) {
             productImage.classList.add('cart-img');
         }
 
-        productName.innerHTML = carrinho[0].name;
-        productPrice.innerHTML = carrinho[0].price;
-        productImage.setAttribute('src', carrinho[0].img);
-        productQtd.innerHTML = carrinho[0].qtd;
-        productTotalPrice.innerHTML = carrinho[0].totalPrice;
-        btnDelete.setAttribute('src', carrinho[0].delete)
+        productName.innerHTML = shoppingCart[0].name;
+        productPrice.innerHTML = "$" + shoppingCart[0].price.toFixed(2);
+        productImage.setAttribute('src', shoppingCart[0].img);
+        productQtd.innerHTML = " * " + shoppingCart[0].qtd;
+        productTotalPrice.innerHTML = "$" + shoppingCart[0].totalPrice.toFixed(2);
+        btnDelete.setAttribute('src', shoppingCart[0].delete)
+        emptyCart.style.display = "none"
+        btnCheckout.style.display ="block"
+
+        console.log(shoppingCart)
+        
     }
 }
 
 function removeCart() {
-    carrinho.splice(0, 1);
+    shoppingCart.splice(0, 1);
     productImage.classList.remove("cart-img");
     productName.innerHTML = '';
     productPrice.innerHTML = '';
@@ -58,6 +65,8 @@ function removeCart() {
     productQtd.innerHTML = '';
     productTotalPrice.innerHTML = '';
     btnDelete.setAttribute('src', "")
+    emptyCart.style.display = "block"
+    btnCheckout.style.display = "none"
 }
 
 function addQtd() {

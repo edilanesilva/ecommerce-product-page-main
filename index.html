@@ -38,17 +38,23 @@
     <div class="header-cart esconder" id="header-card" padding="1em">
       <!-- Empty Cart Content -->
       <div class="cart">
-        <h3 class="cart-heading" >Cart</h3>
+        <h3 class="cart-heading" >Cart </h3>
         <div class="cart-product" >
           <img id="image" />
           <div class="cart-content">
+            <div id="empty-cart" class="empty-cart">Your cart is empty</div>
             <h3 id="name-produto"></h3>
-            <p id="preco"> Your cart is empty</p>
-            <div id="qtd"></div>
-            <div id="preco-final"></div>
+            <div class="content-price">
+              <p id="preco"></p>
+              <div id="qtd"></div>
+             
+              <span id="preco-final"></span>
+            </div>
           </div>
           <img class="btn-delete" id="btn-delete">
+          
         </div>
+        <button class="cart-btn" id="btn-checkout">Checkout</button>
       </div>
     </div>  
 
