@@ -9,7 +9,7 @@
 - [Meu processo](#meu-processo)
   - [Construído](#construído-com)
   - [O que aprendi](#o-que-aprendi)
-  - [Desenvolvimento contínuo](#continued-development)
+  - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
 -   [Author](#author)
  
 ## Visão geral
@@ -71,7 +71,7 @@ const product = {
 ```js
 productName.innerHTML = shoppingCart[0].name;
 ```
-### Continued development
+### Desenvolvimento contínuo
 
 - Usar funções, passando parâmetros e argumentos
 - Máscara e validação de input em formulários 
