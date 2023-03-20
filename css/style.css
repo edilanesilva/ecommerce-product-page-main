@@ -47,14 +47,29 @@ body{
 }
 
 .nav__list li:hover{
-    border-bottom: 4px solid var(--main-pale-orange);
+    color:var(--main-pale-orange);
 }
 
 .header__cart-icon{
     align-self: center;
     cursor: pointer;
+    position: relative;
 }
-    
+
+.header__cart-icon span{
+    font-size: 11px;
+    padding: 3px 6px;
+    color: var(--light-grayish-blue);
+    background-color: var(--main-pale-orange);
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: none;
+   
+}
+
 .header__user-avatar{
     width: 4rem;
     height: 4rem;
@@ -134,6 +149,9 @@ body{
     font-size: 1.3rem;
     justify-content: space-around;
 }
+.content-price span{
+    font-weight: 700;
+}
 .btn-delete{
     align-self: flex-start;
 }
@@ -203,6 +221,13 @@ main{
 
 .product-thumbnail img{
     border-radius: 12px;
+}
+
+.thumbnail:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    cursor: pointer;
 
 }
 
@@ -214,9 +239,8 @@ main{
     padding: 0 4.9rem 0 7.5rem;
     align-self: flex-start;
     padding-top: 2rem;
-    
-   
 }
+
 .company-name {
     color: var(--main-pale-orange);
     font-size: 1.2rem;
@@ -286,8 +310,6 @@ main{
     flex-basis: 30%;
     align-items: center;
     position: relative;
-  
-   
 }
 
 .quantity-number{
@@ -296,7 +318,7 @@ main{
     border-radius: 1rem;
     border: none;
     padding: 1.5rem;
-   font-size: var(--main-font-size);
+    font-size: var(--main-font-size);
     text-align: center;
     color: var(--very-dark-blue);
     height: 5.6rem;
@@ -306,8 +328,7 @@ main{
     cursor: pointer;
     position: absolute;
     top: 50%;
-   left: 15px;
-    
+    left: 15px;
     transform: translate(-50%,-50%);
 }
 /* esconde o contador do input number */
