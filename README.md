@@ -55,7 +55,7 @@ Os usuários devem ser capazes de:
 }
 ```
 
-> JS -> Manipução de objeto
+> JS -> Manipução de objeto e array
 ```js
 
 let shoppingCart = []; 
