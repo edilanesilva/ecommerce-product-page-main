@@ -4,12 +4,12 @@
 
 - [Visão geral](#visão geral)
   - [O desafio](#o-desafio)
-  - [Captura de tela](#captura de tela)
+  - [Captura de tela](#captura-de-tela)
   - [Links](#links)
 - [Meu processo](#meu-processo)
-  - [Construído com](#construído com)
+  - [Construído](#construído-com)
   - [O que aprendi](#o-que-aprendi)
-  - [Desenvolvimento contínuo](#desenvolvimento contínuo)
+  - [Desenvolvimento contínuo](#continued-development)
 -   [Author](#author)
  
 ## Visão geral
