@@ -1,4 +1,4 @@
-# Solução de produto de comércio eletrônico
+# Produto de comércio eletrônico
 
 ## Índice
 
