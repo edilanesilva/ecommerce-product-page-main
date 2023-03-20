@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshot-desktop.jpg)
+![](/screenshot-desktop.PNG)
 
 ## My process
 
@@ -48,7 +48,7 @@ Users should be able to:
     margin: 0;
 }
 ```
-> adiciona o objeto ao array com push
+
 ```js
 
 let shoppingCart = []; 
@@ -60,7 +60,7 @@ const product = {
             }
             shoppingCart.push(product) 
 ```
-> acessa o elemento do objeto e adiciona no carrinho com o innerHTML
+
 ```js
 productName.innerHTML = shoppingCart[0].name;
 ```
