@@ -31,7 +31,7 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- [link do projeto](https://edilanesilva.github.io/ecommerce-product-page-main/)
+- [Link do projeto](https://edilanesilva.github.io/ecommerce-product-page-main/)
 
 
 ## Meu processo
