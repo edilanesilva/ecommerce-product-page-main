@@ -21,8 +21,7 @@ Os usuários devem ser capazes de:
 - [x] Veja os estados de foco para todos os elementos interativos na página
 - [x] Adicionar itens ao carrinho
 - [x] Visualize o carrinho e remova itens dele
-- [ ] Abra uma galeria lightbox clicando na imagem grande do produto
-- [ ] Mude a imagem grande do produto clicando nas pequenas imagens em miniatura
+
 - [ ] Veja o layout ideal para o site, dependendo do tamanho da tela do dispositivo
 
 ### Captura de tela
