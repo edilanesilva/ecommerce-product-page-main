@@ -76,5 +76,6 @@ productName.innerHTML = shoppingCart[0].name;
 - Máscara e validação de input em formulários 
 - Usar estruturas de repetição e laços ('while', 'for')
 
+
 ## Author
 [Edilane Silva](https://www.linkedin.com/in/edilane-silva/)
