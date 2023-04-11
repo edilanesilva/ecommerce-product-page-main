@@ -1,46 +1,51 @@
-# Ecommerce-product solution
+# Produto de comércio eletrônico
 
-## Table of contents
+## Índice
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+- [Visão geral](#visão-geral)
+  - [O desafio](#o-desafio)
+  - [Captura de tela](#captura-de-tela)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+- [Meu processo](#meu-processo)
+  - [Construído](#construído-com)
+  - [O que aprendi](#o-que-aprendi)
+  - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
+-   [Author](#author)
  
-## Overview
+## Visão geral
 
-### The challenge
+### O desafio
 
-Users should be able to:
+Os usuários devem ser capazes de:
 
-- [x] See hover states for all interactive elements on the page
-- [x] Add items to the cart
-- [x] View the cart and remove items from it
-- [ ] Open a lightbox gallery by clicking on the large product image
-- [ ] Switch the large product image by clicking on the small thumbnail images
-- [ ] View the optimal layout for the site depending on their device's screen size
+- [x] Veja os estados de foco para todos os elementos interativos na página
+- [x] Adicionar itens ao carrinho
+- [x] Visualize o carrinho e remova itens dele
 
-### Screenshot
+- [ ] Veja o layout ideal para o site, dependendo do tamanho da tela do dispositivo
 
-![](screenshot-desktop.jpg)
+### Captura de tela
 
-## My process
+![](/screenshot-desktop.PNG)
 
-### Built with
+### Links
 
-- Semantic HTML5 markup
-- CSS custom properties
+- [Link](https://edilanesilva.github.io/ecommerce-product-page-main/)
+
+
+## Meu processo
+
+### Construído com
+
+- HTML5 
+- CSS
 - Flexbox
-- CSS Grid
+- Grade CSS
 - JavaScript vanilla
 
-### What I learned <br>
+### O que aprendi <br>
  
->  esconde o contador do input number 
+> CSS -> esconde o contador do input number  
 ```css
         input[type="number"]::-webkit-outer-spin-button,
         input[type="number"]::-webkit-inner-spin-button {
@@ -48,7 +53,8 @@ Users should be able to:
     margin: 0;
 }
 ```
-> adiciona o objeto ao array com push
+
+> JS -> Manipução de objeto e array
 ```js
 
 let shoppingCart = []; 
@@ -60,14 +66,16 @@ const product = {
             }
             shoppingCart.push(product) 
 ```
-> acessa o elemento do objeto e adiciona no carrinho com o innerHTML
+
 ```js
 productName.innerHTML = shoppingCart[0].name;
 ```
-### Continued development
+### Desenvolvimento contínuo
 
 - Usar funções, passando parâmetros e argumentos
 - Máscara e validação de input em formulários 
 - Usar estruturas de repetição e laços ('while', 'for')
 
 
+## Author
+[Edilane Silva](https://www.linkedin.com/in/edilane-silva/)
