@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
+
 <body>
   <header class="header container">
     <div class="group-header">
@@ -25,21 +29,21 @@
         </ul>
       </nav>
     </div>
-    <div class="group-header" >
-      <div class="header__cart-icon" id="show-or-hide" >
-        <img src="assets/images/icon-cart.svg" alt="" >
+    <div class="group-header">
+      <div class="header__cart-icon" id="show-or-hide">
+        <img src="assets/images/icon-cart.svg" alt="">
         <span id="qtd-cart"></span>
       </div>
       <figure class="header__user-avatar">
         <img src="assets/images/image-avatar.png" alt="image-avatar">
       </figure>
     </div>
-     <!-- Start Cart Content -->
+    <!-- Start Cart Content -->
     <div class="header-cart esconder" id="header-card" padding="1em">
       <!-- Empty Cart Content -->
       <div class="cart">
-        <h3 class="cart-heading" >Cart </h3>
-        <div class="cart-product" >
+        <h3 class="cart-heading">Cart </h3>
+        <div class="cart-product">
           <img id="image" />
           <div class="cart-content">
             <div id="empty-cart" class="empty-cart">Your cart is empty</div>
@@ -51,11 +55,11 @@
             </div>
           </div>
           <img class="btn-delete" id="btn-delete">
-          
+
         </div>
         <button class="cart-btn" id="btn-checkout">Checkout</button>
       </div>
-    </div>  
+    </div>
 
   </header>
 
@@ -73,7 +77,7 @@
             <img src="assets/images/image-product-2-thumbnail.jpg" alt="" class="img-responsive">
           </div>
           <div class="thumbnail">
-            <img src="assets/images/image-product-3-thumbnail.jpg" alt=""class="img-responsive">
+            <img src="assets/images/image-product-3-thumbnail.jpg" alt="" class="img-responsive">
           </div>
           <div class="thumbnail">
             <img src="assets/images/image-product-4-thumbnail.jpg" alt="" class="img-responsive">
@@ -81,41 +85,42 @@
         </div>
       </section>
       <section class="section-description">
-      <p class="company-name">Sneaker Company</p>
-      <h1 class="description-title">Fall Limited Edition Sneakers</h1>
+        <p class="company-name">Sneaker Company</p>
+        <h1 class="description-title">Fall Limited Edition Sneakers</h1>
 
-      <p class="description-product"> 
-        These low-profile sneakers are your perfect casual  wear companion. Featuring a 
-        durable rubber outer sole, they’ll withstand everything the weather can offer.
-      </p>
-      <div class="product-price">
-        <p class="new-price" id="new-price">$125.00</p>
-        <p class="price-percent">50%</p>
-        <p class="old-price">$250.00</p>
-      </div>
-      <div class="product-button">
-        <div class="product-quantity">
-          <img src="assets/images/icon-minus.svg" alt="" class="button-minus" id="btn-minus">
-          
-          <input type="number" value="0" class="quantity-number" id="quantity-input">
-          
-          <img src="assets/images/icon-plus.svg" alt=""  class="button-plus" id="btn-plus">
-          
+        <p class="description-product">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="product-price">
+          <p class="new-price" id="new-price">$125.00</p>
+          <p class="price-percent">50%</p>
+          <p class="old-price">$250.00</p>
         </div>
-       
-        <button class="button-addcart" id="add-item"> 
-          <img src="assets/images/icon-cart-white.svg" alt="icon-cart" class="cart-white"> Add to cart
-        </button>
-      </div>
+        <div class="product-button">
+          <div class="product-quantity">
+            <img src="assets/images/icon-minus.svg" alt="" class="button-minus" id="btn-minus">
+
+            <input type="number" value="0" class="quantity-number" id="quantity-input">
+
+            <img src="assets/images/icon-plus.svg" alt="" class="button-plus" id="btn-plus">
+
+          </div>
+
+          <button class="button-addcart" id="add-item">
+            <img src="assets/images/icon-cart-white.svg" alt="icon-cart" class="cart-white"> Add to cart
+          </button>
+        </div>
       </section>
     </article>
-  
+
   </main>
   <script src="js/script.js"></script>
-  
+
   <footer class="footer">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Edilane Silva</a>.
   </footer>
 </body>
+
 </html>
