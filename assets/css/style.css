@@ -44,10 +44,18 @@ body{
 .nav__list li{
     display: inline-block;
     transition: 0.5s;
+    position: relative;
 }
 
-.nav__list li:hover{
-    color:var(--main-pale-orange);
+.nav__list li:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -95px;
+    border-radius: 10px;
+    display: block;
+    background-color: var(--main-orange);
+    width: 100%;
+    height: 5px;
 }
 
 .header__cart-icon{
@@ -302,69 +310,58 @@ main{
 
 .product-button{
     display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .product-quantity{
-    margin-right: 2.2rem;
+   background-color: var(--light-grayish-blue);
     display: flex;
-    flex-basis: 30%;
     align-items: center;
-    position: relative;
+    padding: 1rem;
+    width: 35%;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.button-minus{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .quantity-number{
-    width: 100%;
-    background-color: var(--light-grayish-blue);
-    border-radius: 1rem;
-    border: none;
-    padding: 1.5rem;
-    font-size: var(--main-font-size);
-    text-align: center;
-    color: var(--very-dark-blue);
-    height: 5.6rem;
-    
+    font-weight: 700;
 }
-.button-minus{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translate(-50%,-50%);
-}
-/* esconde o contador do input number chrome*/
-        input[type="number"]::-webkit-outer-spin-button,
-        input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* firefox*/
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
 .button-plus{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right:9px;
-    transform: translate(-50%,-50%);
     
 }
 
 .button-addcart{
-    width: 100%;
-    background-color: var(--main-orange);
-    border-radius: 1rem;
-    height: 5.6rem;
-    color: #fff;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--main-font-size);
-    border: none;
-    box-shadow: 0 10px 25px rgba(255, 125, 26, 0.35);
-    cursor: pointer;
+   cursor: pointer;
+  width: 65%;
+  margin-left: 1rem;
+  background-color: var(--main-orange);
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 7px;
+  padding: 1rem;   
 }
 
 .button-addcart:hover{
