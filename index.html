@@ -65,23 +65,25 @@
 
   <main class="container">
     <article class="container-product">
-      <section class="product-gallery">
-        <div class="product-photo">
-          <img src="assets/images/image-product-1.jpg" alt="product" class="img-responsive">
+      <section class="thumbnails">
+        <div class="product-main">
+          <img src="assets/images/image-product-1.jpg" alt="product"
+            class="main-thumbnail invisible-mob img-responsive" />
+          <div class="preview">
+            <img class="selected" src="assets/images/image-product-1-thumbnail.jpg" alt="" />
+            <img src="assets/images/image-product-2-thumbnail.jpg" alt="" />
+            <img src="assets/images/image-product-3-thumbnail.jpg" alt="" />
+            <img src="assets/images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
         </div>
-        <div class="product-thumbnail">
-          <div class="thumbnail">
-            <img src="assets/images/image-product-1-thumbnail.jpg" alt="product thumbnal" class="img-responsive">
-          </div>
-          <div class="thumbnail">
-            <img src="assets/images/image-product-2-thumbnail.jpg" alt="" class="img-responsive">
-          </div>
-          <div class="thumbnail">
-            <img src="assets/images/image-product-3-thumbnail.jpg" alt="" class="img-responsive">
-          </div>
-          <div class="thumbnail">
-            <img src="assets/images/image-product-4-thumbnail.jpg" alt="" class="img-responsive">
-          </div>
+        <div class="mobile-thumb hidden">
+          <img src="assets/images/image-product-1.jpg" class="thumb-mob" alt="product" />
+          <button id="next">
+            <img src="assets/images/icon-next.svg" alt="next" />
+          </button>
+          <button id="previous">
+            <img src="assets/images/icon-previous.svg" alt="previous" />
+          </button>
         </div>
       </section>
       <section class="section-description">
@@ -102,14 +104,11 @@
             <button class="button-minus" id="btn-minus">
               <img src="assets/images/icon-minus.svg" alt="">
             </button>
-
             <p type="number" class="quantity-number" id="quantity-input">0</p>
             <button class="button-plus" id="btn-plus">
               <img src="assets/images/icon-plus.svg" alt="">
             </button>
-
           </div>
-
           <button class="button-addcart" id="add-item">
             <img src="assets/images/icon-cart-white.svg" alt="icon-cart" class="cart-white"> Add to cart
           </button>
@@ -118,6 +117,10 @@
     </article>
 
   </main>
+
+
+
+
   <script src="assets/js/script.js"></script>
 
   <footer class="footer">
