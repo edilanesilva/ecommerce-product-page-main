@@ -393,3 +393,41 @@ main{
     color:  var(--main-pale-orange);
     font-weight: 700;
 }
+/* Lightbox styles */
+.lightbox {
+  position: absolute;
+  top: 0;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.lightbox-container {
+  position: relative;
+}
+.close-lightbox {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  color: orange;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.close-lightbox:hover img {
+  filter: sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1);
+}
+.close-lightbox img {
+  width: 20px;
+  height: 20px;
+}
+ .lightbox .main-thumbnail {
+  width: 500px;
+} 
+
+
+ 
